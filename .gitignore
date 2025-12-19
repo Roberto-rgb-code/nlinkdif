@@ -1,0 +1,69 @@
+# Archivos Python y scripts temporales
+*.py
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Archivos Excel temporales (mantener solo cc_dif_final.xlsx)
+*.xlsx
+!cc_dif_final.xlsx
+
+# Archivos CSV temporales
+*.csv
+
+# Archivos HTML temporales (mantener solo index.html y boton_descarga.html)
+descarga_cc_dif*.html
+!index.html
+!boton_descarga.html
+
+# Archivos Markdown temporales
+RESUMEN*.md
+!README.md
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Archivos de respaldo
+*.bak
+*.backup
+*~
+
+# Mantener solo los archivos necesarios para GitHub Pages:
+# - index.html
+# - cc_dif_final.xlsx
+# - image.png
+# - README.md
+# - boton_descarga.html
+

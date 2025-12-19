@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centros de Cuidado DIF Jalisco - Descarga de Base de Datos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .logo-container {
+            margin-bottom: 30px;
+        }
+        
+        .logo-container img {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        
+        .download-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        
+        .download-link {
+            align-items: center;
+            color: #ffffff;
+            display: inline-flex;
+            font-size: 18px;
+            gap: 12px;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px 30px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .download-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .download-link span {
+            font-size: 24px;
+        }
+        
+        .info-section {
+            margin-top: 30px;
+            text-align: left;
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        
+        .info-section h2 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .info-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .info-section li {
+            color: #666;
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .info-section li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="image.png" alt="DIF Jalisco Logo">
+        </div>
+        
+        <h1>Centros de Cuidado DIF Jalisco</h1>
+        <p class="subtitle">Base de datos completa de centros de atención y cuidado en Jalisco</p>
+        
+        <div class="download-section">
+            <p style="text-align:center;">
+                <a class="download-link" href="cc_dif_final.xlsx" download="cc_dif_final.xlsx">
+                    <span><strong>⬇️</strong></span>
+                    <strong>Descargar base de datos</strong>
+                </a>
+            </p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-number">2,188</div>
+                <div class="stat-label">Centros registrados</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">115</div>
+                <div class="stat-label">Municipios</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">22</div>
+                <div class="stat-label">Tipos de servicios</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">50</div>
+                <div class="stat-label">Campos de datos</div>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h2>Información del Dataset</h2>
+            <ul>
+                <li>Datos actualizados con nombres oficiales verificados</li>
+                <li>Información geográfica completa (coordenadas y direcciones)</li>
+                <li>Clasificación por sector (Público, Privado, Institución de la sociedad civil)</li>
+                <li>Filtros preparados para dashboard de ArcGIS</li>
+                <li>Fuentes y créditos documentados en el archivo</li>
+            </ul>
+        </div>
+        
+        <div class="info-section" style="margin-top: 20px;">
+            <h2>Fuentes de Datos</h2>
+            <ul>
+                <li>Sistema Nacional para el Desarrollo Integral de la Familia (DIF)</li>
+                <li>Google Maps Places API</li>
+                <li>DIF Jalisco y DIF Municipales</li>
+                <li>INEGI - DENUE</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
