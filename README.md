@@ -9,7 +9,7 @@ Este repositorio contiene la base de datos de centros de cuidado del Sistema DIF
 - **2,188 centros registrados**
 - **115 municipios de Jalisco**
 - **22 tipos de servicios diferentes**
-- **51 campos de información**
+- **50 campos de información**
 
 ## Archivos
 
