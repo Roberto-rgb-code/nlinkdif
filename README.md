@@ -13,7 +13,7 @@ Este repositorio contiene la base de datos de centros de cuidado del Sistema DIF
 
 ## Archivos
 
-- `cc_dif_final.xlsx` - Base de datos completa en formato Excel
+- `Gobierno_de_Jalisco_2024-2030.jpg` - Imagen Gobierno de Jalisco 2024-2030
 - `index.html` - Página web para descarga del archivo
 - `image.png` - Logo DIF Jalisco
 

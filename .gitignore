@@ -24,9 +24,8 @@ wheels/
 .installed.cfg
 *.egg
 
-# Archivos Excel temporales (mantener solo cc_dif_final.xlsx)
+# Archivos Excel temporales
 *.xlsx
-!cc_dif_final.xlsx
 
 # Archivos CSV temporales
 *.csv
@@ -62,7 +61,7 @@ desktop.ini
 
 # Mantener solo los archivos necesarios para GitHub Pages:
 # - index.html
-# - cc_dif_final.xlsx
+# - Gobierno_de_Jalisco_2024-2030.jpg
 # - image.png
 # - README.md
 # - boton_descarga.html
