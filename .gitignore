@@ -24,8 +24,9 @@ wheels/
 .installed.cfg
 *.egg
 
-# Archivos Excel temporales
+# Archivos Excel temporales (mantener centros_cuidado_jalisco.xlsx para descarga)
 *.xlsx
+!centros_cuidado_jalisco.xlsx
 
 # Archivos CSV temporales
 *.csv
@@ -61,7 +62,7 @@ desktop.ini
 
 # Mantener solo los archivos necesarios para GitHub Pages:
 # - index.html
-# - Gobierno_de_Jalisco_2024-2030.jpg
+# - centros_cuidado_jalisco.xlsx
 # - image.png
 # - README.md
 # - boton_descarga.html
